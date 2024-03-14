@@ -11,3 +11,7 @@ https://xd.adobe.com/view/03bbbaee-5ffb-4f82-8b0a-f1c8e32a49e9-56e8/specs/?hints
   - 幅は全幅で固定
 - その他コンテンツについて
   - 幅は 960px で固定
+
+## その他仕様
+
+- ヘッダーの各種リンクは"#"で返却されること
