@@ -15,3 +15,9 @@ https://xd.adobe.com/view/03bbbaee-5ffb-4f82-8b0a-f1c8e32a49e9-56e8/specs/?hints
 ## その他仕様
 
 - ヘッダーの各種リンクは"#"で返却されること
+
+## コーディングルール
+
+- CSS の命名規則は以下のとおりであること
+  - 「id」はキャメルケース（testExample)
+  - 「class」はスネークケース(test_example)
