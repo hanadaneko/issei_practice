@@ -1,0 +1,24 @@
+<!-- ボタンを押したとき、フォームに記載された値が10以下であれば「OK」を、それ以外であれば「NO」を表示する -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <input id="input" type="text" />
+    <button id="button">Click me!</button>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("button").addEventListener("click", function () {
+      const inputValue = document.getElementById("input").value;
+      console.log(inputValue);
+      if (inputValue <= 10 && inputValue !== "") {
+        alert("OK");
+      } else {
+        alert("NO");
+      }
+    });
+  </script>
+</html>

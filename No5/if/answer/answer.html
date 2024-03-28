@@ -1,0 +1,31 @@
+<!-- フォームの値で下記のように表示を変更し、アラート表示してください  -->
+<!-- 100なら「満点！！」 -->
+<!-- 80以上なら「合格！」 -->
+<!-- 30以下なら「赤点…」 -->
+<!-- それ以外なら「不合格」 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <input id="input" type="text" />
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("input").addEventListener("input", function () {
+      const inputValue = document.getElementById("input").value;
+      console.log(inputValue);
+      if (inputValue == 100) {
+        alert("満点！！");
+      } else if (inputValue >= 80) {
+        alert("合格！");
+      } else if (inputValue <= 30) {
+        alert("赤点…");
+      } else {
+        alert("不合格");
+      }
+    });
+  </script>
+</html>
