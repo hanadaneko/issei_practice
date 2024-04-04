@@ -1,0 +1,112 @@
+<!-- jsでボタンを押したらアラートが出るものを作成 -->
+
+<!-- 1.クリックイベントを登録。関数を直接呼び出し -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+  <body>
+    <button onclick="alertMessage()">Click me! 1</button>
+  </body>
+  <script type="text/javascript">
+    function alertMessage() {
+      alert("Hello World! 1");
+    }
+  </script>
+</html> -->
+
+<!-- 2.Idを登録しているDOMにクリックイベントを登録  -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <button id="button">Click me! 2</button>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("button").onclick = function () {
+      alert("Hello World! 2");
+    };
+  </script>
+</html> -->
+
+<!-- 3.Idを登録しているDOMにイベント設定(クリック)  -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <button id="button">Click me! 3</button>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("button").addEventListener("click", function() {
+      alert("Hello World! 3");
+    });
+  </script>
+</html> -->
+
+<!-- 4.DOMを取得(id)し、イベント設定(クリック)  -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <button id="button">Click me! 4</button>
+  </body>
+
+  <script type="text/javascript">
+    document.querySelector("#button").addEventListener("click", function () {
+      alert("Hello World! 4");
+    });
+  </script>
+</html> -->
+
+<!-- 5.DOMを取得(class)し、イベント設定(クリック)  -->
+<!-- 補足：Class属性は複数ある可能性があるため、配列で取得し1つずつ回す必要がある -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <button class="button">Click me! 5</button>
+  </body>
+
+  <script type="text/javascript">
+    document.querySelectorAll(".button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        alert("Hello World! 5");
+      });
+    });
+  </script>
+</html> -->
+
+<!-- イベントの解説 -->
+<!-- 6.jsでマウスホバーしたらアラート表示 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sample</title>
+  </head>
+
+  <body>
+    <button id="button">Hover me!</button>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("button").onmouseover = function () {
+      alert("Hello World!");
+    };
+  </script>
+</html>
