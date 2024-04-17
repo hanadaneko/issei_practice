@@ -14,8 +14,11 @@
     document.getElementById("button").addEventListener("click", function () {
       const inputValue = document.getElementById("input").value;
       console.log(inputValue);
-      if (inputValue <= 10 && inputValue !== "") {
-        alert("OK");
+
+      if (inputValue < 10 && inputValue !== "") {
+        alert("over");
+      } else if (inputValue === 10) {
+        alert("10");
       } else {
         alert("NO");
       }
