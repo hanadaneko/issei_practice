@@ -1,0 +1,27 @@
+<span id="colored-counter">0</span>
+<input id="color" placeholder='#000'></input>
+<input type="button" id="count_button" value='add' />
+
+<script>
+  let state = {color: '', value: 0};
+
+  function setState() {
+    document.querySelector('#colored-counter').style.color = state.color;
+    document.querySelector('#colored-counter').innerHTML = state.value;
+  }
+
+  document.querySelector('#color').onkeyup = function () {
+    state.color = this.value;
+    setState();
+  }
+
+  document.querySelector('#count_button').onclick = function () {
+    state.value++;
+    setState();
+  }
+
+  function prass(x,y){
+    return x+y;
+  }
+    console.log(prass(1,2));
+</script>

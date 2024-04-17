@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <button id="button">ボタン</button>
+    <script>
+	    // id'button'のものをbuttonという定数で取得
+        const button = document.getElementById('button');
+        // buttonがクリックされたとき、関数の内容を実行
+        button.addEventListener('click', () => {
+	        // 1~100まで値をログに出力する
+            for (let i = 1; i <= 100; i++) {
+                console.log(i);
+            }
+        });
+    </script>
+</body>
+</html>
